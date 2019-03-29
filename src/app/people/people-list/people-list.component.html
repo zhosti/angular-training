@@ -1,0 +1,13 @@
+<div class="card-coontainer">
+  <igx-card class="my-card" *ngFor="let person of people">
+    <igx-card-header>
+      <!-- <igx-avatar roundShape="true" [initials]="person | initials"></igx-avatar> -->
+      <div class="igx-card-header_title">{{ person.firstname + ' ' + person.lastname }}</div>
+      <div class="igx-card-header_subtitle">{{ person.birthDate | date:'short' }}</div>
+
+    </igx-card-header>
+    <igx-card-content>
+      Hooray - our person Render
+    </igx-card-content>
+  </igx-card>
+</div>
