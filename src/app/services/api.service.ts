@@ -11,9 +11,10 @@ export class ApiService {
   constructor() { }
 
   public getPeople(): Person[] {
-    let person: Person[] = [
+    const person: Person[] = [
       { firstname: 'Ivan', lastname: 'Ivanov', birthDate: new Date() },
-      { firstname: 'Georgi', lastname: 'Georgiev', birthDate: new Date() }
+      { firstname: 'Georgi', lastname: 'Georgiev', birthDate: new Date() },
+      { firstname: 'Petar', lastname: 'Petrov', birthDate: new Date() }
     ];
 
     return person;
